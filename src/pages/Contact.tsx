@@ -1,0 +1,1 @@
+export default function Contact(){return(<section className='container py-12'><h2 className='section-title mb-2'>Contact</h2><p>FST Nancy — Faculté des Sciences et Technologies, 54500 Vandœuvre-lès-Nancy</p><p className='mt-2 text-sm'>Email général: <a className='underline' href='mailto:contact-isc@univ-lorraine.fr'>contact-isc@univ-lorraine.fr</a></p></section>)}
