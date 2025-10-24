@@ -1,0 +1,17 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import './index.css'
+import { I18nProvider } from './i18n'
+import Layout from './pages/Layout'
+import Home from './pages/Home'
+import Admissions from './pages/Admissions'
+import Parcours from './pages/Parcours'
+import SMS from './pages/SMS'
+import RESET from './pages/RESET'
+import COMETES from './pages/COMETES'
+import Contact from './pages/Contact'
+import Quiz from './pages/Quiz'
+import QR from './pages/QR'
+const router=createBrowserRouter([{path:'/',element:<Layout/>,children:[{index:true,element:<Home/>},{path:'admissions',element:<Admissions/>},{path:'parcours',element:<Parcours/>},{path:'parcours/sms',element:<SMS/>},{path:'parcours/reset',element:<RESET/>},{path:'parcours/cometes',element:<COMETES/>},{path:'quiz',element:<Quiz/>},{path:'contact',element:<Contact/>},{path:'qr',element:<QR/>}]}])
+ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><I18nProvider><RouterProvider router={router}/></I18nProvider></React.StrictMode>)
